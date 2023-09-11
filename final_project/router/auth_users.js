@@ -56,7 +56,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
   //Write your code here
 
   const isbn = req.params.isbn;
-  const review = req.body.review;
+  const review = req.params.review;
   let exist = false;
 
     if (isbn >= 0 && isbn<=10){
